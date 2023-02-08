@@ -1,0 +1,70 @@
+ 
+{% extends 'base.html' %}
+{% block main %}
+
+<body>
+    <div class="div1">
+        <img src = "{{url_for('static', filename='mypic.JPG')}}" alt="Picture of Me"/>
+        <p id="Fullname">Aybarinee Campbell Mendez</p>
+        <p class="big "> @Aybarineecm <br> Kingston, Jamaica<br> Joined {{datejoined}}</p>
+       
+    </div>
+    <div class="secondsection">
+        <p id="p">Hey! I am Aybarinee Campbell Mendez, I am currently studying to become a Software engineer at UWI. I am 21 years old! I am currently living in Jamaica and my favorite bible verse is Psalms 94:19 and it says "When the cares of my heart are many, your consolations cheer my soul."</p>
+
+    </div>
+
+
+    <div class="flex-container">
+        <div class="item "><span class="number">7</span><br> Post</div>
+        <div class="item"> <span class="number">100</span><br>Following</div>
+        <div class="item "><span class="number">250</span><br> Followers</div>
+    </div>
+<br>
+    
+    <button type="button">Follow</button>
+
+</body>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

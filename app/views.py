@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+from datetime import datetime
 
 
 ###
@@ -17,7 +18,14 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
+@app.route('/profile')
+def profile():
+    datejoined= format_date_joined("2023-01-23")
+    return render_template("profile.html", datejoined=datejoined)
 
+def format_date_joined(date):
+    dt = datetime.strptime(date, '%Y-%m-%d')
+    return dt.strftime('%b, %Y')
 ###
 # The functions below should be applicable to all Flask apps.
 ###
